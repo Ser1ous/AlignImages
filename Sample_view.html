@@ -17,7 +17,26 @@
 <script type="text/javascript" src="[[++assets_url]]components/themebootstrap/js/bootstrap-image-gallery.min.js"></script>
 
 
+<h1> getResources</h1>
+<div id="gallery" data-toggle="modal-gallery" data-target="#modal-gallery">
 
+<div style="width: 603px; text-align: justify; line-height: 0;">
+[[AlignImage?
+  &snippet=`getResources`
+  &parents=`12`
+  &sortby=`{"menuindex":"ASC"}`
+  &lineLimit=`4`
+ &limit=`40`
+  &lineWidth=`563`
+&tvPrefix = `tv.`
+  &tpl_out=`tpl.galAlignImage`
+]]
+<img src="" style="width: 100%; height: 1px; opacity: 0;">
+<!-- Картинка нужна для выравнивания последней строки -->
+</div>
+</div>
+
+<h1> Gallery</h1>
 <div id="gallery" data-toggle="modal-gallery" data-target="#modal-gallery">
 
 <div style="width: 603px; text-align: justify; line-height: 0;">
@@ -26,13 +45,29 @@
   &lineLimit=`5`
   &limit=`40`
   &lineWidth=`563`
-  &processImage=`image_absolute`
-  &tpl=`tpl.galAlignImage`
-  &crop=`1`
-  &album=`Some gallery name`
-  &tvPrefix=``
+  &album=`Gallery`
+  &tpl_out=`tpl.galAlignImage`
 ]]
 <img src="" style="width: 100%; height: 1px; opacity: 0;">
 <!-- Картинка нужна для выравнивания последней строки -->
 </div>
 </div>
+
+<h1> FileDir</h1>
+<div id="gallery" data-toggle="modal-gallery" data-target="#modal-gallery">
+
+<div style="width: 603px; text-align: justify; line-height: 0;">
+[[AlignImage?
+    &snippet=`filedir`
+  &dir=`img/`
+  &lineLimit=`4`
+  &limit=`40`
+  &lineWidth=`563`
+  &tpl_out=`tpl.galAlignImage`
+]]
+<img src="" style="width: 100%; height: 1px; opacity: 0;">
+<!-- Картинка нужна для выравнивания последней строки -->
+</div>
+</div>
+
+
